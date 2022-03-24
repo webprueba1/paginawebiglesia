@@ -57,14 +57,14 @@
     <main class="contenedor seccion contenido-centrado">
         <h2 class="fw-300 centrar-texto">Llena el formulario de Contacto</h2>
 
-        <form class="contacto" action=""method="POST">
+        <form class="contacto" action="enviar.php"method="POST">
             <fieldset>
                 <legend>Información Personal</legend>
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" placeholder="Tu Nombre">
 
-                <label for="email">E-mail: </label>
-                <input type="email" id="email" placeholder="Tu Correo electrónico" required>
+                <label for="mail">Correo: </label>
+                <input type="mail" id="email" placeholder="Tu Correo electrónico" required>
 
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" placeholder="Tu Teléfono" required>
@@ -75,44 +75,19 @@
             </fieldset>
                 
 
-            <fieldset>
-                <legend>Motivo de contacto</legend>
-                <label for="opciones">Oracion o Consejeria</label>
-                <select id="opciones">
-                    <option value="" disabled selected>-- Seleccione --</option>
-                    <option value="Compra">Pedido de oración</option>
-                    <option value="Vende">Pedido de consejeria</option>
-                </select>
-
-            </fieldset>
-
-            <fieldset>
-                <legend>Contacto</legend>
-
-                <p>Como desea ser Contactado:</p>
-
-                <div class="forma-contacto">
-                    <label for="telefono">Teléfono</label>
-                    <input type="radio" name="contacto" value="telefono" id="telefono">
-
-                    <label for="correo">E-mail</label>
-                    <input type="radio" name="contacto" value="correo" id="correo">
-                </div>
-
-                <p>Si eligió Teléfono, elija la fecha y la hora</p>
-                <label for="fecha">Fecha:</label>
-                <input type="date" id="fecha">
-
-                <label for="hora">Hora:</label>
-                <input type="time" id="hora" min="06:00" max="18:00">
-
-     
-            </fieldset>
+        
 
             <input type="submit" value="Enviar" class="boton boton-verde">
 
         </form>
     </main>
+    <center>
+        <div class="ver-anuncios">
+            <a href="index.html" class="boton boton-verde">Volver</a>
+        </div>
+       </center>
+
+       <br>
 
     <footer class="site-footer seccion">
         <div class="contenedor contenedor-footer">
